@@ -26,3 +26,15 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  background-color: var(--black);
+  color:#6e6f72;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+
+.button-container {
+  margin: 1.5rem;
+  margin-top: 0.25rem; /* Reduce space above button */
+}

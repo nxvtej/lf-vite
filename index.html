@@ -1,102 +1,25 @@
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>&#65279;</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>">
-  <meta name="description" content="Life countdown chrome extension">
-  <link rel="stylesheet" href="src/styles/main.css">
-</head>
-<body>
-  <div class="container">
-    <div class="countdown"></div>
-    <textarea
-      id="textarea"
-      placeholder="..."
-      autocomplete="off"
-    ></textarea>
-
-    <button id="btn" class="btn">read me</button>
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <div class="readme">
-          <h1>Life Countdown v3.0</h1>
-          <br>
-          <p></strong>
-            <a href="https://chrome.google.com/webstore/detail/life-countdown/cbmkjjddopphkedckgbaoenglknojeob">Chrome Extension</a>
-            <br>
-            <a href="https://github.com/vaaroncarrasco/lf-vite">GitHub Repo</a>
-          </p>
-          <br>
-          <h3>New Features: Textarea</h3>
-          <br>
-          <ul>
-            <li>
-              <p><strong><em>Indent feature</em></strong>: 2 space indentation when pressing Ctrl + Q.
-                <br>
-                The tab key preserves its default behavior. I have decided to
-                <br>
-                use Ctrl + Q, as hijacking the Tab native behavior, would go
-                <br>
-                against the accessibility principles.
-              </p>
-            </li>
-            <br>
-            <li>
-              <p><strong><em>Auto save</em></strong>: Every time you type, the string is saved into the
-                <br>
-                local storage and it is read from there on every new tab.
-                <br>
-                I&#39;m honestly planning to make a different approach as this
-                <br>
-                may be too much stress for the browser just to save a plain
-                <br>
-                text. Stay tuned for the next update.
-              </p>
-            </li>
-          </ul>
-          <br>
-          <h3>New Features: Countdown</h3>
-          <br>
-          <ul>
-            <li>
-              <p><strong><em>Click reset</em></strong>: Click or tap on countdown to reset the
-                <br>
-                countdown timer. It will delete the previously saved date
-                <br>
-                from the local storage and reload the page. It'll keep the
-                <br>
-                textarea value value though.
-              </p>
-            </li>
-          </ul>
-          <br>
-          <p>
-            If you want to support me and encourage me to develop more free
-            <br>
-            and open source tools, feel free to help me out with my cat's food lol
-          </p>
-          <br>
-        </div>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-          <input type="hidden" name="hosted_button_id" value="V6MG7L7EA4HW8" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-          <img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-        <br>
-        <p>
-          Any bug report, suggestion or feature request?
-          <br>
-          <!-- twitter link -->
-          My twitter DMs are open <a href="https://twitter.com/_aaroncarrasco" target="_blank">@_aaroncarrasco</a> :]
-        </p>
-        <br>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <title>&#65279;</title> -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>"
+    />
+    <meta name="description" content="Life countdown" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="countdown-container">
+        <div class="countdown"></div>
+      </div>
+      <textarea id="textarea" placeholder="..." autocomplete="off"></textarea>
+      <div class="button-container">
+        <button class="button">reset</button>
       </div>
     </div>
-
-  </div>
-  <script type="module" src="src/js/countdown.js"></script>
-  <script type="module" src="src/js/textarea.js"></script>
-  <script type="module" src="src/js/modal.js"></script>
-</body>
+    <script type="module" src="src/js/countdown.js"></script>
+    <script type="module" src="src/js/textarea.js"></script>
+  </body>
 </html>

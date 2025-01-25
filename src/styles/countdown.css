@@ -1,7 +1,18 @@
+.countdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Aligns children to the bottom */
+  flex-direction: row; /* Ensure elements are side by side */
+  height: 120px; /* Set a specific height to position the button */
+  /* Adjust height as needed */
+}
+
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
   cursor: pointer;
+  flex-grow: 1; /* Allow this section to take up maximum space */
+  height: 100%; /* Ensure countdown takes full height */
 }
